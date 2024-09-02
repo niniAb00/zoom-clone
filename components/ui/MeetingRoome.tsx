@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import React, { useState } from "react";
+import { LayoutList } from "lucide-react";
 type CallLayoutType = "grid " | "speaker-left" | "speaker-right";
 const MeetingRoome = () => {
   const [Layout, setLayout] = useState("speaker-left");
@@ -48,7 +49,9 @@ const MeetingRoome = () => {
         <CallControls />
         <DropdownMenu>
           <div className="flex items-center">
-            <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+            <DropdownMenuTrigger>
+              <LayoutList size={20} />
+            </DropdownMenuTrigger>
           </div>
 
           <DropdownMenuContent>
