@@ -49,7 +49,7 @@ const MeetingRoome = () => {
         <CallControls />
         <DropdownMenu>
           <div className="flex items-center">
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger className="cur cursor-pointer rounded-2xl bg-[#19232d]">
               <LayoutList size={20} />
             </DropdownMenuTrigger>
           </div>
